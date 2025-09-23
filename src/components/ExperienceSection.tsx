@@ -5,54 +5,32 @@ import { Badge } from "@/components/ui/badge";
 const ExperienceSection = () => {
   const experiences = [
     {
+      title: "Product Strategy Consultant",
+      company: "LumenAR",
+      location: "Copenhagen, Denmark",
+      period: "2025",
+      type: "Project",
+      description: "Developed comprehensive go-to-market strategy for antireflective screen cover technology.",
+      highlights: [
+        "Led cross-functional team to align technical innovation with market needs",
+        "Conducted market analysis for B2B and B2C segments",
+        "Created strategic foundation for product launch and market entry"
+      ],
+      skills: ["Product Strategy", "Go-to-Market", "Market Research", "Cross-functional Leadership"]
+    },
+    {
       title: "Senior Software Developer",
       company: "Twilio",
       location: "Tallinn, Estonia",
       period: "June 2022 - June 2025",
       type: "Full-time",
-      description: "Senior software developer with three years of working experience at two teams:",
+      description: "Built distributed systems and led cost optimization initiatives across messaging teams.",
       highlights: [
-        "Led cross-functional change management initiatives, delivering tens of thousands in cost savings while maintaining system performance and reliability",
-        "Designed and architected an end-to-end testing system covering Twilio's full messaging pipeline as part of a quarterly team initiative",
-        "Evaluated six implementation options using C4 diagrams, cost modeling, and technical trade-offs",
-        "Collaborated with four messaging teams to consolidate requirements and drive adoption",
-        "Developed near real-time monitoring systems using Spark streaming and Kafka to enhance operational visibility",
-        "Built systems to overview Twilio messaging routes and tools to manage cost efficiently"
+        "Designed end-to-end testing system covering Twilio's full messaging pipeline",
+        "Delivered tens of thousands in cost savings through real-time monitoring systems",
+        "Collaborated with four messaging teams using C4 diagrams and cost modeling"
       ],
-      teams: [
-        "Super Network monitoring: Developing near real-time monitoring systems",
-        "Messaging supply cost engineer: Building cost management systems"
-      ],
-      skills: ["Spark Streaming", "Kafka", "System Architecture", "Cost Optimization", "Cross-functional Leadership"]
-    },
-    {
-      title: "Software Engineering Intern",
-      company: "Twilio",
-      location: "Tallinn, Estonia", 
-      period: "June 2022 - June 2025",
-      type: "Internship",
-      description: "Contributing to the development and testing of new features for Twilio's cloud communication platform, enhancing functionality and performance.",
-      highlights: [
-        "Developed real-time monitoring and performance management systems using Agile methodologies",
-        "Implemented process optimization for system health detection and false negative alert reduction",
-        "Executed cost management and process improvement initiatives for messaging supply chain optimization",
-        "Created automated systems for cost reduction and data-driven decision making"
-      ],
-      skills: ["Cloud Platforms", "Agile Methodologies", "System Monitoring", "Performance Optimization"]
-    },
-    {
-      title: "Robotics Teacher",
-      company: "School of Randvere",
-      location: "Randvere, Estonia",
-      period: "October 2020 - May 2021",
-      type: "Part-time",
-      description: "Developed curriculum and hands-on projects to foster STEM skills and practical problem-solving for students.",
-      highlights: [
-        "Created engaging robotics curriculum for students",
-        "Designed hands-on projects to develop problem-solving skills",
-        "Fostered interest in STEM education through practical applications"
-      ],
-      skills: ["Education", "Curriculum Development", "Robotics", "STEM"]
+      skills: ["System Architecture", "Spark Streaming", "Kafka", "Cost Optimization"]
     },
     {
       title: "International Coordinator", 
@@ -60,28 +38,13 @@ const ExperienceSection = () => {
       location: "Tallinn, Estonia",
       period: "June 2020 - June 2021",
       type: "Volunteer",
-      description: "Managed communications across the BEST network to drive alignment and participation in European educational programs.",
+      description: "Managed communications across the BEST network for European educational programs.",
       highlights: [
         "Coordinated international communications across BEST network",
-        "Drove alignment and participation in European educational programs",
+        "Drove alignment and participation in educational programs",
         "Managed cross-cultural communications and project coordination"
       ],
-      skills: ["International Relations", "Communication", "Program Management", "Cross-cultural Collaboration"]
-    },
-    {
-      title: "Project Manager",
-      company: "TalTech Student Council of the School of IT",
-      location: "Tallinn, Estonia",
-      period: "March 2020 - May 2020",
-      type: "Volunteer",
-      description: "Served as project manager for the annual Robocode programming competition.",
-      highlights: [
-        "Managed annual Robocode programming competition",
-        "Oversaw sponsor outreach and volunteer coordination",
-        "Handled technical setup including live-streaming",
-        "Ensured smooth event operations and execution"
-      ],
-      skills: ["Event Management", "Sponsor Relations", "Technical Coordination", "Live Streaming"]
+      skills: ["International Relations", "Communication", "Program Management"]
     }
   ];
 
@@ -133,17 +96,6 @@ const ExperienceSection = () => {
                 <p className="text-foreground leading-relaxed">
                   {exp.description}
                 </p>
-
-                {exp.teams && (
-                  <div>
-                    <h4 className="font-semibold mb-3 text-primary">Teams & Responsibilities:</h4>
-                    <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                      {exp.teams.map((team, teamIndex) => (
-                        <li key={teamIndex}>{team}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
 
                 <div>
                   <h4 className="font-semibold mb-3 text-primary">Key Achievements:</h4>

@@ -241,75 +241,38 @@ const BookshelfSection = () => {
           </div>
         </div>
 
-        {/* Reading Categories & Want to Read */}
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Reading Categories */}
-          <Card className="glass-card hover-lift animate-fade-in">
-            <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
-                <Book size={20} className="text-primary" />
-                Reading Categories
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
-                {categories.map((category, index) => {
-                  const IconComponent = category.icon;
-                  return (
-                    <div key={index} className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
-                      <div className="flex items-center gap-3">
-                        <div className={`p-2 rounded-lg ${category.color}`}>
-                          <IconComponent size={16} />
-                        </div>
-                        <span className="font-medium">{category.name}</span>
-                      </div>
-                      <Badge variant="secondary" className="text-xs">
-                        {category.count} books
-                      </Badge>
+        {/* Want to Read */}
+        <Card className="glass-card hover-lift animate-fade-in max-w-2xl mx-auto">
+          <CardHeader>
+            <CardTitle className="text-xl flex items-center gap-2">
+              <Lightbulb size={20} className="text-primary" />
+              Want to Read
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {readingList.map((book, index) => (
+                <div key={index} className="p-4 rounded-lg bg-muted/50 space-y-2">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h4 className="font-medium text-sm">{book.title}</h4>
+                      <p className="text-muted-foreground text-xs">by {book.author}</p>
                     </div>
-                  );
-                })}
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Want to Read */}
-          <Card className="glass-card hover-lift animate-fade-in">
-            <CardHeader>
-              <CardTitle className="text-xl flex items-center gap-2">
-                <Lightbulb size={20} className="text-primary" />
-                Want to Read
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {readingList.map((book, index) => (
-                  <div key={index} className="p-4 rounded-lg bg-muted/50 space-y-2">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <h4 className="font-medium text-sm">{book.title}</h4>
-                        <p className="text-muted-foreground text-xs">by {book.author}</p>
-                      </div>
-                      <Badge 
-                        variant={book.priority === "High" ? "default" : book.priority === "Medium" ? "secondary" : "outline"}
-                        className="text-xs"
-                      >
-                        {book.priority}
-                      </Badge>
-                    </div>
-                    <p className="text-xs text-muted-foreground italic">
-                      {book.reason}
-                    </p>
+                    <Badge 
+                      variant={book.priority === "High" ? "default" : book.priority === "Medium" ? "secondary" : "outline"}
+                      className="text-xs"
+                    >
+                      {book.priority}
+                    </Badge>
                   </div>
-                ))}
-                
-                <Button variant="outline" className="w-full mt-6 hover-lift">
-                  See Full Reading List
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+                  <p className="text-xs text-muted-foreground italic">
+                    {book.reason}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Reading Stats */}
         <div className="mt-16 text-center">

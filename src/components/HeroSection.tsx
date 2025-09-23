@@ -21,12 +21,8 @@ const HeroSection = () => {
           Veroonika Tamm
         </h1>
         
-        <p className="text-xl sm:text-2xl text-muted-foreground mb-6 animate-slide-up">
-          Senior Software Engineer
-        </p>
-        
-        <p className="text-lg text-muted-foreground mb-8 animate-slide-up">
-          Transitioning into Product Management
+        <p className="text-xl sm:text-2xl text-muted-foreground mb-8 animate-slide-up">
+          Builder at heart. Engineer by training. PM by choice. Excited to ship fast.
         </p>
 
         {/* Bio */}
@@ -73,44 +69,6 @@ const HeroSection = () => {
           </Button>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
-          <Button 
-            onClick={() => scrollToSection("experience")}
-            className="hover-lift group"
-            size="lg"
-          >
-            View My Experience
-            <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            onClick={() => scrollToSection("projects")}
-            className="hover-lift"
-            size="lg"
-          >
-            See My Projects
-          </Button>
-        </div>
-
-        {/* Interests Highlight */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
-          <Card className="p-4 glass-card hover-lift text-center">
-            <p className="font-medium text-primary mb-1">Marathon Runner</p>
-            <p className="text-sm text-muted-foreground">Copenhagen Marathon 2025</p>
-          </Card>
-          
-          <Card className="p-4 glass-card hover-lift text-center">
-            <p className="font-medium text-primary mb-1">Tech Enthusiast</p>
-            <p className="text-sm text-muted-foreground">AI & Digital Health</p>
-          </Card>
-          
-          <Card className="p-4 glass-card hover-lift text-center">
-            <p className="font-medium text-primary mb-1">Creative Actor</p>
-            <p className="text-sm text-muted-foreground">DTU ACT Community</p>
-          </Card>
-        </div>
       </div>
     </section>
   );
