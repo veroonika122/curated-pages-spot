@@ -3,6 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import blogOptimizationImage from "@/assets/blog-optimization.jpg";
+import blogSeoImage from "@/assets/blog-seo.jpg";
 
 const BlogSection = () => {
   const navigate = useNavigate();
@@ -14,7 +16,8 @@ const BlogSection = () => {
       readTime: "8 min read",
       date: "Sept 15, 2025",
       author: "Veroonika Tamm",
-      link: "/blog/engineering-to-pm"
+      link: "/blog/engineering-to-pm",
+      image: blogOptimizationImage
     },
     {
       title: "Building Cost-Efficient Distributed Systems at Scale",
@@ -23,7 +26,8 @@ const BlogSection = () => {
       readTime: "12 min read", 
       date: "Sept 12, 2025",
       author: "Veroonika Tamm",
-      link: "/blog/cost-efficient-systems"
+      link: "/blog/cost-efficient-systems",
+      image: blogSeoImage
     }
   ];
 
@@ -41,9 +45,13 @@ const BlogSection = () => {
           {blogPosts.map((post, index) => (
             <Card key={index} className="hover-lift glass-card animate-fade-in p-6">
               <div className="flex gap-6">
-                {/* Placeholder Image */}
-                <div className="w-24 h-24 bg-gradient-primary rounded-lg flex-shrink-0 flex items-center justify-center">
-                  <span className="text-primary-foreground text-2xl">🖼</span>
+                {/* Blog Image */}
+                <div className="w-24 h-24 rounded-lg flex-shrink-0 overflow-hidden">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 {/* Content */}
@@ -75,15 +83,6 @@ const BlogSection = () => {
           ))}
         </div>
 
-        {/* Navigation */}
-        <div className="flex justify-between items-center">
-          <Button variant="outline" className="hover-lift" disabled>
-            ← Newer Posts
-          </Button>
-          <Button variant="outline" className="hover-lift" disabled>
-            Older Posts →
-          </Button>
-        </div>
       </div>
     </section>
   );

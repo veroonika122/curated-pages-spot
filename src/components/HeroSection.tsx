@@ -53,17 +53,23 @@ const HeroSection = () => {
 
         {/* Social Links */}
         <div className="flex justify-center gap-4 mb-12">
-          <Button variant="outline" size="sm" className="hover-lift">
-            <Linkedin size={18} className="mr-2" />
-            LinkedIn
+          <Button variant="outline" size="sm" className="hover-lift" asChild>
+            <a href="https://www.linkedin.com/in/veroonika-tamm/" target="_blank" rel="noopener noreferrer">
+              <Linkedin size={18} className="mr-2" />
+              LinkedIn
+            </a>
           </Button>
-          <Button variant="outline" size="sm" className="hover-lift">
-            <Github size={18} className="mr-2" />
-            GitHub
+          <Button variant="outline" size="sm" className="hover-lift" asChild>
+            <a href="https://github.com/veroonika122" target="_blank" rel="noopener noreferrer">
+              <Github size={18} className="mr-2" />
+              GitHub
+            </a>
           </Button>
-          <Button variant="outline" size="sm" className="hover-lift">
-            <FileText size={18} className="mr-2" />
-            Resume
+          <Button variant="outline" size="sm" className="hover-lift" asChild>
+            <a href="https://www.linkedin.com/in/veroonika-tamm/" target="_blank" rel="noopener noreferrer">
+              <FileText size={18} className="mr-2" />
+              Resume
+            </a>
           </Button>
         </div>
 
