@@ -31,20 +31,6 @@ const ExperienceSection = () => {
         "Collaborated with four messaging teams using C4 diagrams and cost modeling"
       ],
       skills: ["System Architecture", "Spark Streaming", "Kafka", "Cost Optimization"]
-    },
-    {
-      title: "International Coordinator", 
-      company: "BEST Estonia",
-      location: "Tallinn, Estonia",
-      period: "June 2020 - June 2021",
-      type: "Volunteer",
-      description: "Managed communications across the BEST network for European educational programs.",
-      highlights: [
-        "Coordinated international communications across BEST network",
-        "Drove alignment and participation in educational programs",
-        "Managed cross-cultural communications and project coordination"
-      ],
-      skills: ["International Relations", "Communication", "Program Management"]
     }
   ];
 

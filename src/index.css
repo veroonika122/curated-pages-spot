@@ -20,11 +20,11 @@
     --card-border: 220 20% 92%;
     --card-shadow: 220 25% 25% / 0.05;
 
-    /* Brand Colors */
-    --primary: 220 90% 56%;
+    /* Brand Colors - Pastel Pink */
+    --primary: 330 70% 75%;
     --primary-foreground: 0 0% 100%;
-    --primary-soft: 220 60% 95%;
-    --primary-hover: 220 85% 50%;
+    --primary-soft: 330 60% 95%;
+    --primary-hover: 330 65% 70%;
 
     /* Content Hierarchy */
     --secondary: 220 15% 95%;
@@ -37,9 +37,9 @@
     /* Interactive */
     --border: 220 20% 90%;
     --input: 220 20% 92%;
-    --ring: 220 90% 56%;
-    --link: 220 90% 56%;
-    --link-hover: 220 85% 50%;
+    --ring: 330 70% 75%;
+    --link: 330 70% 75%;
+    --link-hover: 330 65% 70%;
 
     /* Status */
     --success: 142 76% 36%;
@@ -96,10 +96,10 @@
     --card-border: 225 15% 18%;
     --card-shadow: 0 0% 0% / 0.3;
 
-    --primary: 220 85% 65%;
+    --primary: 330 75% 80%;
     --primary-foreground: 225 25% 8%;
-    --primary-soft: 220 30% 15%;
-    --primary-hover: 220 90% 70%;
+    --primary-soft: 330 30% 15%;
+    --primary-hover: 330 80% 85%;
 
     --secondary: 225 15% 15%;
     --secondary-foreground: 220 15% 85%;
@@ -110,9 +110,9 @@
 
     --border: 225 15% 18%;
     --input: 225 15% 18%;
-    --ring: 220 85% 65%;
-    --link: 220 85% 65%;
-    --link-hover: 220 90% 70%;
+    --ring: 330 75% 80%;
+    --link: 330 75% 80%;
+    --link-hover: 330 80% 85%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

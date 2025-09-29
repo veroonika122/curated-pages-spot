@@ -29,12 +29,10 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto mb-12">
           <Card className="p-8 glass-card hover-lift">
             <p className="text-lg leading-relaxed text-foreground">
-              Senior engineer with <span className="font-semibold text-primary">3+ years of experience</span> leading 
-              cross-functional initiatives at <span className="font-semibold text-primary">Twilio</span>, 
-              now transitioning into Product Management. Proven ability to drive product strategy, 
-              go-to-market planning, and customer discovery through hands-on experience at LumenAR. 
-              Strong technical foundation in distributed systems and cost optimization, paired with 
-              business acumen gained through international product initiatives and business education.
+              Product-focused builder with experience leading cross-functional work at <span className="font-semibold text-primary">Twilio</span> and <span className="font-semibold text-primary">LumenAR</span>. 
+              I bring a mix of strategy, customer insight, and execution—shaped by hands-on work across product launches, 
+              international initiatives, and go-to-market planning. Currently shifting into Product Management with a focus 
+              on solving real problems with clarity and care.
             </p>
           </Card>
         </div>
