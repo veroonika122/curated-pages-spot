@@ -9,15 +9,14 @@ const ProjectsSection = () => {
       role: "Co-Founder",
       location: "Tallinn",
       period: "September - current",
-      description: "Aura is a high-fidelity mobile-first prototype designed to help children with ADHD build consistent medication habits. The app focuses on calm, empathetic, and rewarding interactions to reduce emotional burden while encouraging daily adherence.",
+      description: "Aura is an ADHD-focused mobile application in development aimed at improving medication adherence through gamified UX, behavioral design, and AI-driven verification. The product combines engagement mechanics, habit tracking, and clinical data integration to support children with ADHD and their caregivers.",
       highlights: [
-        "Prototype Design: Created a mobile-first, visually soothing interface using soft colors, gentle gradients, rounded fonts, and generous white space to reduce alert fatigue. Features include a \"growth metaphor\" dashboard, an interactive \"I took it!\" button with celebratory feedback, a non-judgmental calendar, and an SOS toolkit for calming exercises.",
-        "User Research: Conducted ~10 interviews with ADHD patients, caregivers, and doctors, plus follow-up testing sessions with the prototype. Research also explored AI-assisted adherence verification.",
-        "Target Users & GTM Strategy: Focused on children with ADHD and their caregivers. Phase 1: B2C freemium model with a premium subscription ($7.99–$12.99/month) offering AI features and caregiver dashboards. Phase 2: B2B enterprise model leveraging verified adherence data for RTM billing, SaaS licensing, and anonymized datasets for pharma analytics.",
-        "Tools: Prototype developed in Lovable; user flows, interactive elements, and visual design executed in high-fidelity screens.",
-        "Learnings & Next Steps: Gained insights into ADHD-specific engagement mechanics and caregiver needs; next steps include iterating on gamified interactions, AI verification, and clinical integration."
+        "Gamified UX & Behavioral Design: Designing reward systems, habit streaks, and engagement flows tailored to ADHD-specific adherence challenges.",
+        "AI Medication Verification: Exploring AI-assisted medication tracking to transform adherence into actionable clinical data.",
+        "Clinical Integration: Planning for integration with healthcare systems to enable data-driven insights and potential remote therapeutic monitoring.",
+        "User Research & Validation: Conducting interviews with ADHD patients, caregivers, and healthcare professionals to inform feature design and usability."
       ],
-      skills: ["Product Strategy", "UX/UI Design", "Gamification", "User Research", "Prototyping", "Business Model Design"]
+      skills: ["Product Strategy", "UX Design", "Gamification", "Behavioral Design", "User Research", "Healthcare Technology Strategy"]
     },
     {
       title: "LumenAR",
