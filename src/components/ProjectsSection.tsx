@@ -42,9 +42,6 @@ const ProjectsSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 gradient-text">
             Projects
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Entrepreneurial ventures combining product strategy, user research, and innovative solutions
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

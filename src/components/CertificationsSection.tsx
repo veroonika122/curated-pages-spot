@@ -45,9 +45,6 @@ const CertificationsSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 gradient-text">
             Certifications & Credentials
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Continuous professional development in project management, product strategy, and technical leadership
-          </p>
         </div>
 
         {/* Certifications Grid */}
