@@ -5,16 +5,19 @@ import { Badge } from "@/components/ui/badge";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior Software Developer",
+      title: "Software Developer",
       company: "Twilio",
       location: "Tallinn, Estonia",
       period: "June 2022 - June 2025",
       type: "Full-time",
-      description: "Built distributed systems and led cost optimization initiatives across messaging teams.",
+      description: "Super Network Monitoring & Messaging Supply Cost",
       highlights: [
-        "Designed end-to-end testing system covering Twilio's full messaging pipeline",
-        "Delivered tens of thousands in cost savings through real-time monitoring systems",
-        "Collaborated with four messaging teams using C4 diagrams and cost modeling"
+        "Led cross-functional initiatives to optimize messaging supply chain costs, delivering tens of thousands in annual savings while maintaining performance and reliability.",
+        "Conducted data-driven cost–benefit and scalability analyses for new system architectures, evaluating six design options and presenting recommendations to stakeholders.",
+        "Collaborated with multiple product and engineering teams to align system investments with long-term scalability and integration goals.",
+        "Designed and implemented an end-to-end testing framework to improve reliability across Twilio's global messaging network.",
+        "Developed real-time monitoring and performance management systems, leveraging analytics to reduce false alerts and improve operational efficiency.",
+        "Supported strategic decision-making by building automated tools for cost-quality tradeoff analysis and real-time routing optimization."
       ],
       skills: ["System Architecture", "Spark Streaming", "Kafka", "Cost Optimization"]
     }
@@ -27,9 +30,6 @@ const ExperienceSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 gradient-text">
             Professional Experience
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Building distributed systems, leading cross-functional teams, and driving product innovation
-          </p>
         </div>
 
         <div className="space-y-8">

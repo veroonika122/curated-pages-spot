@@ -8,7 +8,7 @@ const EducationSection = () => {
     location: "Copenhagen, Denmark",
     period: "2025",
     status: "Completed",
-    description: "Project management, entrepreneurial marketing, and machine learning applications.",
+    description: "Exchange Semester focused on project management in tech-driven contexts. Led a strategic analysis of the Bestseller More App—assessing objectives, risks, and team dynamics—to deliver clear, actionable recommendations, and collaborated on go-to-market planning for LumenAR, aligning technical innovation with B2B and B2C needs while coordinating cross-functional teams and stakeholders.",
     skills: ["Project Management", "Go-to-Market Strategy", "Machine Learning", "PyTorch"]
   }, {
     degree: "MSc in Business IT",
@@ -24,7 +24,7 @@ const EducationSection = () => {
     location: "Tallinn, Estonia",
     period: "2019 - 2022",
     status: "Graduated",
-    description: "Computer science education with focus on software development and system design.",
+    description: "Thesis: Detection of pets wandering in a residential area. Thesis Supervisor: Savimaa, Raul",
     skills: ["Software Engineering", "System Design", "Computer Vision", "Programming"]
   }];
   return <section id="education" className="py-20 px-4 sm:px-6 lg:px-8 bg-surface-accent">
