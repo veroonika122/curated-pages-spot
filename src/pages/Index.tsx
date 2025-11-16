@@ -1,8 +1,8 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import ProjectsSection from "@/components/ProjectsSection";
 import EducationSection from "@/components/EducationSection";
-
 import CertificationsSection from "@/components/CertificationsSection";
 import Footer from "@/components/Footer";
 
@@ -17,6 +17,7 @@ const Index = () => {
           {/* About section is integrated into the Hero */}
         </div>
         <ExperienceSection />
+        <ProjectsSection />
         <EducationSection />
         <CertificationsSection />
       </main>
