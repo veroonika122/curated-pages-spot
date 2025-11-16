@@ -1,242 +1,111 @@
-import { Code, ExternalLink, Github, Lightbulb, Zap, Target } from "lucide-react";
+import { Calendar, MapPin, Rocket, CheckCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "End-to-End Messaging Testing System",
-      category: "System Architecture",
-      description: "Designed and architected a comprehensive testing system covering Twilio's full messaging pipeline. Evaluated six implementation options using C4 diagrams, cost modeling, and technical trade-offs.",
+      title: "Aura",
+      role: "Co-Founder",
+      location: "Tallinn",
+      period: "September - current",
+      description: "Aura is a high-fidelity mobile-first prototype designed to help children with ADHD build consistent medication habits. The app focuses on calm, empathetic, and rewarding interactions to reduce emotional burden while encouraging daily adherence.",
       highlights: [
-        "Collaborated with four messaging teams to consolidate requirements",
-        "Evaluated multiple architectural approaches with cost modeling",
-        "Drove adoption across cross-functional teams",
-        "Improved system reliability through comprehensive testing"
+        "Prototype Design: Created a mobile-first, visually soothing interface using soft colors, gentle gradients, rounded fonts, and generous white space to reduce alert fatigue. Features include a \"growth metaphor\" dashboard, an interactive \"I took it!\" button with celebratory feedback, a non-judgmental calendar, and an SOS toolkit for calming exercises.",
+        "User Research: Conducted ~10 interviews with ADHD patients, caregivers, and doctors, plus follow-up testing sessions with the prototype. Research also explored AI-assisted adherence verification.",
+        "Target Users & GTM Strategy: Focused on children with ADHD and their caregivers. Phase 1: B2C freemium model with a premium subscription ($7.99–$12.99/month) offering AI features and caregiver dashboards. Phase 2: B2B enterprise model leveraging verified adherence data for RTM billing, SaaS licensing, and anonymized datasets for pharma analytics.",
+        "Tools: Prototype developed in Lovable; user flows, interactive elements, and visual design executed in high-fidelity screens.",
+        "Learnings & Next Steps: Gained insights into ADHD-specific engagement mechanics and caregiver needs; next steps include iterating on gamified interactions, AI verification, and clinical integration."
       ],
-      technologies: ["System Design", "C4 Diagrams", "Cost Modeling", "Cross-team Collaboration"],
-      impact: "Significantly improved system reliability and reduced production incidents",
-      status: "Production",
-      type: "Enterprise System"
+      skills: ["Product Strategy", "UX/UI Design", "Gamification", "User Research", "Prototyping", "Business Model Design"]
     },
     {
-      title: "Real-time Monitoring & Cost Optimization",
-      category: "Data Engineering",
-      description: "Built near real-time monitoring systems using Spark streaming and Kafka, plus cost management tools for Twilio's messaging supply chain.",
+      title: "LumenAR",
+      role: "Product Strategy & GTM",
+      location: "Copenhagen",
+      period: "June – July 2025",
+      description: "LumenAR addresses reflections and glare on modern monitors by exploring nanostructure-based anti-reflective surfaces. The project focused on product strategy, customer discovery, and market research to identify opportunities and position the technology for both B2C and B2B markets.",
       highlights: [
-        "Delivered tens of thousands in cost savings",
-        "Enhanced operational visibility with real-time monitoring",
-        "Implemented automated cost reduction systems",
-        "Created data-driven routing based on cost-quality matrices"
+        "Customer Discovery & Research: Conducted surveys (~75 participants) and interviews with B2B professionals and niche communities to validate user pain points (e.g., glare, clarity degradation) and assess willingness to adopt new display technology.",
+        "Market Strategy: Defined first B2C segment (gamers) and B2B segment (professional users of high-end equipment). Evaluated pricing, customer creation strategies, branding, advertising, and roadmap planning.",
+        "Competitive & Gap Analysis: Studied existing anti-glare solutions and identified opportunities for differentiation in clarity, contrast, and comfort.",
+        "Process & Tools: Led cross-functional strategy work, concept validation, and go-to-market planning, synthesizing insights from research into actionable recommendations.",
+        "Learnings & Next Steps: Validated problem-solution fit and developed a roadmap for further prototyping, customer engagement, and scaling across segments."
       ],
-      technologies: ["Apache Spark", "Kafka", "Streaming Analytics", "Cost Optimization", "Real-time Systems"],
-      impact: "Tens of thousands in cost savings while maintaining performance",
-      status: "Production",
-      type: "Data Platform"
-    },
-    {
-      title: "LumenAR Go-to-Market Strategy",
-      category: "Product Management",
-      description: "Developed comprehensive go-to-market strategy for LumenAR's antireflective screen cover, aligning technical innovation with B2B and B2C customer needs.",
-      highlights: [
-        "Cross-functional team collaboration for product strategy",
-        "Market analysis for B2B and B2C segments",
-        "Technical innovation alignment with market needs",
-        "Go-to-market planning and execution strategy"
-      ],
-      technologies: ["Market Research", "Product Strategy", "Go-to-Market", "Customer Discovery"],
-      impact: "Strategic foundation for product launch and market entry",
-      status: "Completed",
-      type: "Product Strategy"
-    },
-    {
-      title: "Computer Vision Playing Card Classifier",
-      category: "Machine Learning",
-      description: "Cloud-deployed computer vision application that classifies user-uploaded playing card images using PyTorch/TIMM and fine-tuned pre-trained models.",
-      highlights: [
-        "Fine-tuned pre-trained models for card classification",
-        "Cloud deployment with scalable architecture",
-        "PyTorch and TIMM framework implementation",
-        "User-friendly image upload interface"
-      ],
-      technologies: ["PyTorch", "TIMM", "Computer Vision", "Cloud Deployment", "Image Classification"],
-      impact: "Practical application of MLOps principles in production",
-      status: "Deployed",
-      type: "ML Application",
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Pet Detection System",
-      category: "Computer Vision",
-      description: "Bachelor's thesis project: Detection of pets wandering in a residential area using computer vision techniques for automated monitoring.",
-      highlights: [
-        "Computer vision for pet detection and tracking",
-        "Residential area monitoring application",
-        "Automated alert system for pet safety",
-        "Real-world problem solving with AI"
-      ],
-      technologies: ["Computer Vision", "Object Detection", "Python", "OpenCV", "Machine Learning"],
-      impact: "Innovative solution for pet safety in residential communities",
-      status: "Research Project",
-      type: "Research"
-    },
-    {
-      title: "Bestseller More App Analysis",
-      category: "Product Analysis",
-      description: "Detailed analysis of The Bestseller More App applying project management concepts to evaluate objectives, risks, and team interactions.",
-      highlights: [
-        "Comprehensive product analysis using PM frameworks",
-        "Risk assessment and mitigation strategies",
-        "Team interaction and workflow evaluation",
-        "Practical recommendations for improvement"
-      ],
-      technologies: ["Product Analysis", "Project Management", "Risk Assessment", "Business Analysis"],
-      impact: "Strategic insights and practical recommendations for product improvement",
-      status: "Completed",
-      type: "Business Analysis"
+      skills: ["Product Strategy", "Market Research", "Customer Discovery", "Competitive Analysis", "GTM Planning", "Roadmap Development"]
     }
   ];
 
-  const upcomingProjects = [
-    "Advanced ML pipeline for product recommendations",
-    "Distributed systems performance optimization toolkit",
-    "Product analytics dashboard for cross-functional teams"
-  ];
-
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-surface-accent">
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 gradient-text">
-            Featured Projects
+            Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From distributed systems architecture to product strategy and machine learning applications
+            Entrepreneurial ventures combining product strategy, user research, and innovative solutions
           </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="hover-lift glass-card animate-fade-in h-full">
+            <Card key={index} className="hover-lift glass-card animate-fade-in">
               <CardHeader>
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <Badge variant="outline" className="mb-3">
-                      {project.category}
-                    </Badge>
-                    <CardTitle className="text-xl mb-2 leading-tight">
-                      {project.title}
-                    </CardTitle>
-                    <div className="flex items-center gap-2 text-muted-foreground">
-                      <Target size={16} />
-                      <span className="text-sm">{project.type}</span>
-                      <span className="text-xs">•</span>
-                      <Badge 
-                        variant={project.status === "Production" ? "default" : 
-                                project.status === "Deployed" ? "secondary" : "outline"}
-                      >
-                        {project.status}
-                      </Badge>
-                    </div>
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center shadow-md">
+                    <Rocket size={24} className="text-primary-foreground" />
                   </div>
                   
-                  <div className="text-primary">
-                    {project.category === "System Architecture" && <Zap size={24} />}
-                    {project.category === "Data Engineering" && <Code size={24} />}
-                    {project.category === "Product Management" && <Target size={24} />}
-                    {(project.category === "Machine Learning" || project.category === "Computer Vision") && <Lightbulb size={24} />}
-                    {(project.category === "Product Analysis" || project.category === "Business Analysis") && <Target size={24} />}
+                  <div className="flex-1">
+                    <CardTitle className="text-xl mb-2">
+                      {project.title}
+                    </CardTitle>
+                    <div className="flex flex-col gap-1 text-sm text-muted-foreground">
+                      <span className="font-medium">{project.role}</span>
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-2">
+                          <MapPin size={14} />
+                          <span>{project.location}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Calendar size={14} />
+                          <span>{project.period}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardHeader>
 
               <CardContent className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   {project.description}
                 </p>
 
                 <div>
-                  <h4 className="font-semibold mb-3 text-primary">Key Achievements:</h4>
-                  <ul className="list-disc list-inside space-y-1 text-muted-foreground text-sm">
+                  <h4 className="font-semibold mb-3 text-primary">Key Highlights:</h4>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
                     {project.highlights.map((highlight, highlightIndex) => (
-                      <li key={highlightIndex}>{highlight}</li>
+                      <li key={highlightIndex} className="leading-relaxed">{highlight}</li>
                     ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold mb-3 text-primary">Technologies:</h4>
+                  <h4 className="font-semibold mb-3 text-primary">Skills Demonstrated:</h4>
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary" className="hover-lift text-xs">
-                        {tech}
+                    {project.skills.map((skill, skillIndex) => (
+                      <Badge key={skillIndex} variant="outline" className="hover-lift">
+                        {skill}
                       </Badge>
                     ))}
                   </div>
                 </div>
-
-                <div className="p-4 bg-primary-soft rounded-lg">
-                  <h4 className="font-semibold mb-2 text-primary flex items-center gap-2">
-                    <Target size={16} />
-                    Impact:
-                  </h4>
-                  <p className="text-sm text-foreground">{project.impact}</p>
-                </div>
-
-                {(project.demoUrl || project.githubUrl) && (
-                  <div className="flex gap-3 pt-2">
-                    {project.demoUrl && (
-                      <Button variant="outline" size="sm" className="hover-lift group">
-                        <ExternalLink size={16} className="mr-2 group-hover:translate-x-1 transition-transform" />
-                        Live Demo
-                      </Button>
-                    )}
-                    {project.githubUrl && (
-                      <Button variant="outline" size="sm" className="hover-lift">
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </Button>
-                    )}
-                  </div>
-                )}
               </CardContent>
             </Card>
           ))}
         </div>
-
-        {/* Upcoming Projects */}
-        <Card className="glass-card hover-lift animate-fade-in">
-          <CardHeader>
-            <CardTitle className="text-xl flex items-center gap-2">
-              <Lightbulb size={20} className="text-primary" />
-              Upcoming Projects
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              Currently exploring new opportunities in product management, distributed systems, 
-              and machine learning applications. Here's what's coming next:
-            </p>
-            
-            <ul className="space-y-3">
-              {upcomingProjects.map((project, index) => (
-                <li key={index} className="flex items-center gap-3 text-foreground">
-                  <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0" />
-                  {project}
-                </li>
-              ))}
-            </ul>
-
-            <div className="mt-8 text-center">
-              <Button className="hover-lift">
-                Let's Collaborate on Something Amazing
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );

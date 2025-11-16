@@ -5,20 +5,6 @@ import { Badge } from "@/components/ui/badge";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Product Strategy Consultant",
-      company: "LumenAR",
-      location: "Copenhagen, Denmark",
-      period: "2025",
-      type: "Project",
-      description: "Developed comprehensive go-to-market strategy for antireflective screen cover technology.",
-      highlights: [
-        "Led cross-functional team to align technical innovation with market needs",
-        "Conducted market analysis for B2B and B2C segments",
-        "Created strategic foundation for product launch and market entry"
-      ],
-      skills: ["Product Strategy", "Go-to-Market", "Market Research", "Cross-functional Leadership"]
-    },
-    {
       title: "Senior Software Developer",
       company: "Twilio",
       location: "Tallinn, Estonia",
