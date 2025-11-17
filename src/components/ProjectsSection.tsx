@@ -32,6 +32,22 @@ const ProjectsSection = () => {
         "Learnings & Next Steps: Validated problem-solution fit and developed a roadmap for further prototyping, customer engagement, and scaling across segments."
       ],
       skills: ["Product Strategy", "Market Research", "Customer Discovery", "Competitive Analysis", "GTM Planning", "Roadmap Development"]
+    },
+    {
+      title: "Bestseller A/S — Project Management & Case Analysis",
+      role: "Project Management & Case Analysis",
+      location: "Copenhagen",
+      period: "July – August 2025",
+      description: "This analysis was conducted as part of an applied project management course at DTU, focusing on evaluating the development of the Bestseller More App using real project data, stakeholder interviews, and project management frameworks. The project examined how the initiative evolved from a small integration task into a full-scale platform replacement, and identified the drivers, challenges, and lessons behind that transformation.",
+      highlights: [
+        "Analyzed the project through the four core PM perspectives—Purpose, People, Complexity, and Uncertainty—to understand how shifting scope and strategic ambition shaped the project's direction.",
+        "Identified how early under-scoping and evolving business goals led to cascading estimation challenges, scheduling delays, and reactive risk handling.",
+        "Assessed stakeholder communication, team scaling, and role definition, highlighting how informal coordination and strong team motivation compensated for missing governance structures.",
+        "Evaluated estimation methods, workflow planning, and the gradual adoption of agile and lean practices that helped stabilize delivery after an initially unstructured phase.",
+        "Conducted risk and uncertainty analyses (risk matrix, SWOT) revealing gaps in proactive planning and the effects of strategic misrepresentation on resource allocation and timelines.",
+        "Developed evidence-based recommendations to improve scoping transparency, stakeholder alignment, risk planning, and early adoption of agile practices for higher predictability and repeatability."
+      ],
+      skills: ["Project Management", "Risk & Uncertainty Analysis", "Stakeholder Communication", "Scope & Complexity Evaluation", "Agile & Lean Methods", "Case Analysis", "Structured Problem-Solving", "Evidence-Based Reporting"]
     }
   ];
 
