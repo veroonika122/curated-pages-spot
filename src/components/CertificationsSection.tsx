@@ -133,21 +133,6 @@ const CertificationsSection = () => {
           </CardContent>
         </Card>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <Card className="p-8 glass-card hover-lift inline-block">
-            <h3 className="text-xl font-semibold mb-4 gradient-text">
-              Professional Development
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-md">
-              Always learning and growing. Currently pursuing advanced certifications in 
-              product management and technical leadership.
-            </p>
-            <Button className="hover-lift">
-              Connect to Discuss Opportunities
-            </Button>
-          </Card>
-        </div>
       </div>
     </section>
   );
