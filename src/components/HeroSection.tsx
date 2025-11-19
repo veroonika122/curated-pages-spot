@@ -21,11 +21,6 @@ const HeroSection = () => {
           Veroonika Tamm
         </h1>
         
-        <p className="text-xl sm:text-2xl text-muted-foreground mb-8 animate-slide-up">
-          Software engineer studying Business IT at Tallinn University of Technology, seeking to complement my technical background with business acumen. Building on practical engineering experience, I am pivoting toward a product and leadership-focused role where I can connect technical execution with strategic value and team collaboration.
-        </p>
-
-        {/* Bio */}
         <div className="max-w-3xl mx-auto mb-12">
           <Card className="p-8 glass-card hover-lift">
             <p className="text-lg leading-relaxed text-foreground">
