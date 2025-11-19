@@ -38,10 +38,6 @@ const Footer = () => {
     name: "GitHub",
     href: "#",
     icon: Github
-  }, {
-    name: "Resume",
-    href: "#",
-    icon: FileText
   }];
   return <footer className="bg-surface border-t border-card-border">
       {/* Main Footer */}
