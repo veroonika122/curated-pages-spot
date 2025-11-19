@@ -22,7 +22,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-xl sm:text-2xl text-muted-foreground mb-8 animate-slide-up">
-          Builder at heart. Engineer by training. PM by choice. Excited to ship fast.
+          Software engineer studying Business IT at Tallinn University of Technology, seeking to complement my technical background with business acumen. Building on practical engineering experience, I am pivoting toward a product and leadership-focused role where I can connect technical execution with strategic value and team collaboration.
         </p>
 
         {/* Bio */}
@@ -63,12 +63,6 @@ const HeroSection = () => {
             <a href="https://github.com/veroonika122" target="_blank" rel="noopener noreferrer">
               <Github size={18} className="mr-2" />
               GitHub
-            </a>
-          </Button>
-          <Button variant="outline" size="sm" className="hover-lift" asChild>
-            <a href="https://www.linkedin.com/in/veroonika-tamm/" target="_blank" rel="noopener noreferrer">
-              <FileText size={18} className="mr-2" />
-              Resume
             </a>
           </Button>
         </div>
