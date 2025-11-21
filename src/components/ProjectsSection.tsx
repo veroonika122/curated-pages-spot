@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       role: "Co-Founder",
       location: "Tallinn",
       period: "September - current",
-      description: "Aura is an ADHD-focused mobile application in development aimed at improving medication adherence through gamified UX, behavioral design, and AI-driven verification. The product combines engagement mechanics, habit tracking, and clinical data integration to support children with ADHD and their caregivers.",
+      description: "Aura is an ADHD-focused mobile application (pre-seed) in development aimed at improving medication adherence through gamified UX, behavioral design, and AI-driven verification. The product combines engagement mechanics, habit tracking, and clinical data integration to support children with ADHD and their caregivers.",
       highlights: [
         "Gamified UX & Behavioral Design: Designing reward systems, habit streaks, and engagement flows tailored to ADHD-specific adherence challenges.",
         "AI Medication Verification: Exploring AI-assisted medication tracking to transform adherence into actionable clinical data.",
@@ -34,7 +34,7 @@ const ProjectsSection = () => {
       skills: ["Product Strategy", "Market Research", "Customer Discovery", "Competitive Analysis", "GTM Planning", "Roadmap Development"]
     },
     {
-      title: "Bestseller A/S — Project Management & Case Analysis",
+      title: "Bestseller A/S",
       role: "Project Management & Case Analysis",
       location: "Copenhagen",
       period: "July – August 2025",

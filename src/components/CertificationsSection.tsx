@@ -24,6 +24,16 @@ const CertificationsSection = () => {
       type: "Product Management",
       verified: true,
       logo: "https://via.placeholder.com/60x60/1F4E79/FFFFFF?text=IBM"
+    },
+    {
+      title: "Empowering Equity Academy 2025",
+      issuer: "Luxembourg",
+      issueDate: "October 2025",
+      description: "Intensive two-week programme covering venture capital, private equity, impact investing, and ESG accountability frameworks. Completed VC case studies, due diligence exercises, and communication workshops with European Investment Bank and European Investment Fund investment professionals.",
+      skills: ["Venture Capital", "Private Equity", "Impact Investing", "ESG Frameworks", "Due Diligence", "Case Studies"],
+      type: "Finance & Investment",
+      verified: true,
+      logo: "https://via.placeholder.com/60x60/D4AF37/FFFFFF?text=EEA"
     }
   ];
 
